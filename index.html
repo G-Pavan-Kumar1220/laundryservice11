@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laundry services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="service-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="username">
+            <p>Username</p>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="left">
+            <h1>Revitalize Your <br> Clothes With Expert <br> <span>Laundry Services!</span></h1>
+            <p>
+                From premium dry cleaning to swift wash and fold, We <br>deliver care and convenience. Schedule a pickup and <br>
+                rediscover the freshness of your clothes today! 
+            </p>
+            <button class="button">
+               <ion-icon class="small-image" name="storefront-outline"></ion-icon> <p><a href="#Our-service">Book a service today!</a></p>
+            </button>
+        </div>
+        <div class="right">
+             <img class="washing-machine" src="./icons/washing machine.jpg" alt="">
+        </div>
+    </section>
+    <section class="our-achivements-section">
+        <h1>
+            Our Achievements
+        </h1>
+        <div class="div1">
+            <h1>
+            15+ <br> <span>Laundry Services</span>
+        </h1>
+        </div>
+        <div class="div">
+            <h1>
+             240+ <br> <span>Happy coustomer</span>
+        </h1>
+        </div>
+        <div class="div">
+            <h1>
+            2+ Yrs <br> <span>Experience</span>
+        </h1>
+        </div>
+    </section>
+    <section class="our-services" data-aos="fade-up" id="Our-service" >
+       <div class="service-box">
+         <div class="left-section" id="cartbtn">
+           <div class="left-head">
+             <h1>Our Services</h1>
+            <p>Click On The Sdd To Cart Button To Add The Service To Your Cart</p>
+           </div>
+            <div class="services-list">
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/hawaiian-shirt.png" alt="">
+                        <p>Dry Cleaning - <span>&#8377;200.00</span></p>
+                    </div>
+                    <button id="btnc" value="DryCleaning">
+                        Add Item ⊕
+                    </button>
+                </div>
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/basket.png" alt="">
+                        <p>Wash & Fold - <span>&#8377;100.00</span></p>
+                    </div>
+                    <button id="btnc" value="Wash&Fold">
+                        Add Item ⊕
+                    </button>
+                </div>
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/iron.png" alt="">
+                        <p>Ironing - <span>&#8377;30.00</span></p>
+                    </div>
+                    <button id="btnc" value="Ironing">
+                        Add Item ⊕
+                    </button>
+                </div>
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/spot.png" alt="">
+                        <p>Strain Removal - <span>&#8377;500.00</span></p>
+                    </div>
+                    <button id="btnc" value="StrainRemoval">
+                        Add Item ⊕
+                    </button>
+                </div>
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/leather.png" alt="">
+                        <p>leather & Suede Cleaning - <span>&#8377;999.00</span></p>
+                    </div>
+                    <button id="btnc" value="leather&SuedeCleaning">
+                        Add Item ⊕
+                    </button>
+                </div>
+                <div class="service">
+                    <div class="service-in">
+                        <img class="small-image" src="./icons/clothes.png" alt="">
+                        <p>Wedding Dress cleaning - <span>&#8377;2800.00</span></p>
+                    </div>
+                    <button id="btnc" value="WeddingDresscleaning">
+                        Add Item ⊕
+                    </button>
+                </div>
+            </div>
+            <div class="note">
+                <p>    &#9432; Add The items to the cart and Book now</p>
+            </div>
+         </div>
+         <div class="right-section">
+            <div class="service-top">
+            <div class="cart-hd">
+                <h1>Add Items</h1>
+            </div>
+            <div class="cart-list">
+                <div class="cart-items">
+                    <p> <span>S.No</span>Service Name</p>
+                    
+                <p>Price</p>
+                </div>
+                 <div class="cartItem" id="cartspace">
+                    <div id="cartItemList" class="cartItemList"></div>
+
+                 </div>
+
+            </div>
+           
+            <div class="total-amount">
+                <h1>Total Amount</h1>
+                <p>&#8377; 200.00</p>
+            </div>
+         </div>
+         <div class="service-bottom">
+            <h1>Book Now</h1>
+            <p><span>Full Name</span></p>
+            <input class="name" type="text" placeholder="Full Name">
+            <div class="details">
+                <div class="email">
+                    <p>Email Id</p>
+                    <input class="email1" type="email" placeholder="demo@gmail.com" >
+
+                </div>
+                <div class="ph">
+                    <p>Phone Number</p>
+                    <input class="ph1" type="number" maxlength="10" placeholder="+91 - 00000-00000">
+
+                </div>
+            </div>
+            <div class="book-btn">
+                <button class="book-btn1">
+                    Book now
+                </button>
+                <p id="cart-btn-check" class="cart-btn-check"></p>
+                <p id="cart-btn-check1" class="cart-btn-check1"></p>
+            </div>
+         </div>
+         </div>
+       </div>
+    </section>
+    <section class="subscription-section" data-aos="fade-up">
+       <div class="sub-top">
+         <div class="subscription">
+            <div class="sun-in">
+                <img class="sub-img" src="./icons/laundry-machine.png" alt="">
+                <h1>
+                     Premium Service
+                </h1>
+                <p>
+                    Elevate Your Wardrobe With Ourr meticulus dry cleaning, <br>Ensuring garments look and feel as good as new
+
+                </p>
+            </div>
+        </div>
+        <div class="subscription">
+            <div class="sun-in">
+                <img class="sub-img" src="./icons/customer-care.png" alt="">
+                <h1>
+                    Quick Support
+
+                </h1>
+                <p>
+                    We're committed to providing Prompt Solutions to ensure your experience is smooth and worry-free
+                </p>
+            </div>
+        </div>
+        <div class="subscription">
+            <div class="sun-in">
+                <img class="sub-img" src="./icons/delivery-man.png" alt="">
+                <h1>
+                    Hassle Free Delivery
+                </h1>
+                <p>
+                   Enjoy seamless service with our convenient pickup and delivery options tailored to your schedule
+                </p>
+            </div>
+        </div>
+        <div class="subscription">
+            <div class="sun-in">
+                <img class="sub-img" src="./icons/money.png" alt="">
+                <h1>
+                    Affordable Prices
+                </h1>
+                <p>
+                    Experience exceptional care without breaking the bank-Our affordable prices make laundary day stress-free
+                </p>
+            </div>
+        </div>
+       </div>
+       <div class="sub-bottom">
+        <div class="subscribe">
+            <h1>Subscribe to our newsletter.</h1>
+        </div>
+        <div class="sub-bottom-details">
+            <input class="sub-bottom-input" type="text" placeholder="Full name">
+            <input class="sub-bottom-input-email" type="email" placeholder="Email">
+            <button class="sub-bottom-button">Subscribe</button>
+        </div>
+       </div>
+    </section>
+    <footer>
+        <div class="footer1">
+             <div class="footer-in">
+            <div class="footer-logo">
+                Logo
+            </div>
+            <p class="footer-aboutus">
+                <span>About us</span><br><br>
+                Lorem Ipsum Dolor Sit Amet <br> Consectetur.sed At Congue.
+            </p>
+         </div>
+         <div class="footer-in">
+            <h1>
+                Important Links
+            </h1>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Privacy Policy</p>
+            <p>Termms of Username</p>
+            <p>Refund Policy</p>
+         </div>
+         <div class="footer-in">
+            <h1>
+                Contact
+            </h1>
+            <p>
+                mail@site.com
+            </p>
+            <br>
+            <p>
+                +91 1234567890
+            </p>
+         </div>
+         <div class="footer-in">
+            <h1>
+                Follow Us
+            </h1>
+            <div class="social-media-img">
+                <img class="footer-social-media-logo" src="./icons/facebook.png" alt="">
+                <img class="footer-social-media-logo" src="./icons/twitter-sign.png" alt="">
+                <img class="footer-social-media-logo" src="./icons/instagram.png" alt="">
+                <img class="footer-social-media-logo" src="./icons/youtube.png" alt="">
+            </div>
+            </div>
+         </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
