@@ -103,7 +103,28 @@ function bookService() {
     const fullName = document.querySelector('.name').value;
     const email = document.querySelector('.email1').value;
     const phone = document.querySelector('.ph1').value;
-    
+
+function emailsend(){
+    let param = {
+        name:document.querySelector('.name').value,
+        email: document.querySelector('.email1').value,
+        phone: document.querySelector('.ph1').value,
+        messge : cart,
+        subject : "your books services"
+    }
+    emailjs.send('service_vbywb3o', 'template_lb75s5n', param).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
+
+}   
+
+
+
     if (cart.length === 0) {
         cartbtncheck.innerHTML="❗Add the items to the cart to Book";
         cartbtncheck.style.color = "red";
@@ -131,6 +152,7 @@ function bookService() {
     });
     const confirmation = true;
     if (confirmation) {
+        emailsend()
         resetCart();
         document.querySelector('.name').value = '';
         document.querySelector('.email1').value = '';
